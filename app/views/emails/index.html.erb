@@ -1,0 +1,26 @@
+<h1>Emails#index</h1>
+<p>Find me in app/views/emails/index.html.erb</p>
+<br>
+
+<%= button_to "Recevoir un email", emails_path ,method: :post,remote: true, class: "btn btn-primary"%>
+
+<br><br>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Liste des emails</th>
+      <th scope="col">Email sélectionné</th>
+    </tr>
+  </thead>
+  <tbody id="tableau">
+    <tr>
+      <td>exemple objet</td>
+      <%# <td></td> %>
+    </tr>
+    <tr>
+      <%# <td></td> %>
+      <%# <td>Thornton</td> %>
+    </tr>
+  </tbody>
+</table>
+
