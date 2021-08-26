@@ -1,4 +1,6 @@
 <h1>Email#Show</h1>
 
 <h2> Object de l'email :  </h2>
-<p> Contenu :  </p>
+<p> <%= Email.find(params[:id]).object %>
+<h2> Contenu :   </h2>
+<p><%= Email.find(params[:id]).body %> </p>

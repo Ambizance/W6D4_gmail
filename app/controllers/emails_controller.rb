@@ -1,6 +1,7 @@
 class EmailsController < ApplicationController
   def index
-    @emails = Email.all
+    @emails = Email.all.sort{|a,b| b.id<=>a.id}
+    
   end
 
   def create
@@ -15,7 +16,8 @@ class EmailsController < ApplicationController
 
   def show
     @email = Email.find(params[:id])
-  end
+
+end
 
 end
 

@@ -11,16 +11,17 @@
       <th scope="col">Liste des emails</th>
       <th scope="col">Email sélectionné</th>
     </tr>
+     <% @emails.each do |email| %>
+    <tr>
+        <div class="container h-100 w-100">
+        <strong><%=email.object%> <i class="fas fa-reply"></i></strong>
+        </div>
+    </tr>
+    <%end%>
+    
   </thead>
   <tbody id="tableau">
-    <tr>
-      <td>exemple objet</td>
-      <%# <td></td> %>
-    </tr>
-    <tr>
-      <%# <td></td> %>
-      <%# <td>Thornton</td> %>
-    </tr>
+ 
   </tbody>
 </table>
 
